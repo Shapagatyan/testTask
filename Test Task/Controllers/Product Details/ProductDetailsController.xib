@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mark-Pro-Bold.ttf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="MarkPro-Regular.ttf">
+            <string>MarkPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailsController" customModule="Test_Task" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="a2F-6F-Ama" id="5ae-LF-FKc"/>
+                <outlet property="cameraLabel" destination="0qf-Re-7De" id="Vph-RV-GHb"/>
+                <outlet property="capacityCollectionView" destination="Myw-Hk-T1P" id="YHa-4E-qqt"/>
+                <outlet property="coastLabel" destination="Qfv-Uh-MGM" id="SWQ-Pf-qNb"/>
+                <outlet property="colorCollectionView" destination="XeQ-Qb-Ect" id="4LU-hD-NUU"/>
+                <outlet property="cosmosView" destination="qPh-Ue-pQ3" id="owO-he-rJk"/>
+                <outlet property="cpuLabel" destination="Qfv-Uh-MGM" id="5bL-E7-eSc"/>
+                <outlet property="detailsButton" destination="IAC-aI-27E" id="Eqk-CM-mYN"/>
+                <outlet property="featuresButton" destination="bPR-MM-bpf" id="Ohe-7C-1ja"/>
+                <outlet property="isFavoriteButton" destination="ERl-xj-vN3" id="SKA-C2-wK8"/>
+                <outlet property="itemPictureCollectionView" destination="rna-kz-PBd" id="J7Y-Od-tIw"/>
+                <outlet property="orangeView" destination="2Ib-2V-joN" id="4DL-kD-7FI"/>
+                <outlet property="progressLeftConstraint" destination="INR-qE-3ew" id="dcj-jS-GW2"/>
+                <outlet property="scrollview" destination="bfT-AX-65t" id="ggT-9E-hPo"/>
+                <outlet property="sdLabel" destination="8D8-nF-YHi" id="QAh-Lk-KO4"/>
+                <outlet property="shopButton" destination="0mc-a8-3ya" id="KbO-Vb-GXw"/>
+                <outlet property="sliderView" destination="2Ib-2V-joN" id="aQ1-XA-GX1"/>
+                <outlet property="ssdLabel" destination="z5r-VU-5ZQ" id="l9I-uN-P1Z"/>
+                <outlet property="titleLabel" destination="Yh6-Ue-B8j" id="9FH-Gd-W1i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewForAddToCartButton" destination="2DL-UU-VSN" id="9zq-fz-kc2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="bfT-AX-65t">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NQO-UC-tXC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="861.5"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rna-kz-PBd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="349"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="32" minimumInteritemSpacing="32" id="dGD-zn-6Qr">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2F-6F-Ama">
+                                    <rect key="frame" x="0.0" y="349" width="414" height="512.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ib-2V-joN">
+                                            <rect key="frame" x="32" y="166" width="111.5" height="2"/>
+                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="pFF-uo-sfI"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="yXa-0n-q7F">
+                                            <rect key="frame" x="32" y="32" width="350" height="448.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5P8-yc-rR4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="59"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="os2-0f-bNt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="33"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galaxy Note 20 Ultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh6-Ue-B8j">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="246.5" height="33"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="24"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERl-xj-vN3">
+                                                                    <rect key="frame" x="313" y="0.0" width="37" height="33"/>
+                                                                    <color key="backgroundColor" red="0.0039215686269999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="37" id="PBe-97-BMk"/>
+                                                                        <constraint firstAttribute="height" constant="33" id="bks-0q-m5f"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain">
+                                                                        <imageReference key="image" image="heart.fill" catalog="system" symbolScale="medium"/>
+                                                                    </buttonConfiguration>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPh-Ue-pQ3" customClass="CosmosView" customModule="Cosmos">
+                                                            <rect key="frame" x="0.0" y="41" width="350" height="18"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="18" id="gll-p9-G3n"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                                    <real key="value" value="18"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                                    <color key="value" red="1" green="0.72156862745098038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                                    <color key="value" red="1" green="0.72156862745098038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                                    <color key="value" red="1" green="0.72156862745098038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="daj-By-02t">
+                                                    <rect key="frame" x="0.0" y="91" width="350" height="45"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mc-a8-3ya">
+                                                            <rect key="frame" x="0.0" y="0.0" width="111.5" height="45"/>
+                                                            <color key="tintColor" red="0.0039215686274509803" green="0.0" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Shop">
+                                                                <fontDescription key="titleFontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="20"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="ShowShopAction:" destination="-1" eventType="touchUpInside" id="f4v-5F-1YT"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAC-aI-27E">
+                                                            <rect key="frame" x="119.5" y="0.0" width="111" height="45"/>
+                                                            <color key="tintColor" red="0.0039215686269999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Details">
+                                                                <fontDescription key="titleFontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="20"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="showDetailsAction:" destination="-1" eventType="touchUpInside" id="Uq2-el-fx8"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPR-MM-bpf">
+                                                            <rect key="frame" x="238.5" y="0.0" width="111.5" height="45"/>
+                                                            <color key="tintColor" red="0.0039215686269999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Features">
+                                                                <fontDescription key="titleFontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="20"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="showFeaturesAction:" destination="-1" eventType="touchUpInside" id="w9u-us-51V"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="GBe-rI-CnR"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dvu-RU-Ffr">
+                                                    <rect key="frame" x="0.0" y="168" width="350" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3nW-a2-ruT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="84.5" height="50"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon1" translatesAutoresizingMaskIntoConstraints="NO" id="WT8-XV-joJ">
+                                                                    <rect key="frame" x="28.5" y="0.0" width="28" height="28"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exynos 990" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfv-Uh-MGM">
+                                                                    <rect key="frame" x="11.5" y="36" width="61.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="11"/>
+                                                                    <color key="textColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Pp-qo-wUy">
+                                                            <rect key="frame" x="88.5" y="0.0" width="84.5" height="50"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="Icon2" translatesAutoresizingMaskIntoConstraints="NO" id="nV2-46-Zgs">
+                                                                    <rect key="frame" x="28.5" y="0.0" width="28" height="28"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="108 + 12 mp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qf-Re-7De">
+                                                                    <rect key="frame" x="11" y="36" width="63" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="11"/>
+                                                                    <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fix-wt-07n">
+                                                            <rect key="frame" x="177" y="0.0" width="84.5" height="50"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon3" translatesAutoresizingMaskIntoConstraints="NO" id="Cmq-pb-SU8">
+                                                                    <rect key="frame" x="28.5" y="0.0" width="28" height="28"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="8 GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8D8-nF-YHi">
+                                                                    <rect key="frame" x="29" y="36" width="27" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="11"/>
+                                                                    <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8a4-P7-1Mt">
+                                                            <rect key="frame" x="265.5" y="0.0" width="84.5" height="50"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon4" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-xt-l3M">
+                                                                    <rect key="frame" x="33" y="0.0" width="19" height="28"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="256 GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5r-VU-5ZQ">
+                                                                    <rect key="frame" x="23" y="36" width="38.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="11"/>
+                                                                    <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kAb-v9-ogc">
+                                                    <rect key="frame" x="0.0" y="250" width="350" height="112.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select color and capacity" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBd-3A-2zx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a9Y-VC-9vF">
+                                                            <rect key="frame" x="0.0" y="32.5" width="350" height="80"/>
+                                                            <subviews>
+                                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XeQ-Qb-Ect">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="VK3-Kf-B6y"/>
+                                                                    </constraints>
+                                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bg1-da-ZcK">
+                                                                        <size key="itemSize" width="128" height="128"/>
+                                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    </collectionViewFlowLayout>
+                                                                </collectionView>
+                                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Myw-Hk-T1P">
+                                                                    <rect key="frame" x="0.0" y="48" width="350" height="32"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="32" id="Xmy-NI-2on"/>
+                                                                    </constraints>
+                                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lom-VM-YFc">
+                                                                        <size key="itemSize" width="128" height="30"/>
+                                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    </collectionViewFlowLayout>
+                                                                </collectionView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2DL-UU-VSN">
+                                                    <rect key="frame" x="0.0" y="394.5" width="350" height="54"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-jL-0Zs">
+                                                            <rect key="frame" x="40" y="7.5" width="270" height="39.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxz-OJ-r0e">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="139.5" height="39.5"/>
+                                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" title="Add to Cart">
+                                                                        <fontDescription key="titleFontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="20"/>
+                                                                    </buttonConfiguration>
+                                                                    <connections>
+                                                                        <action selector="addToCartAction:" destination="-1" eventType="touchUpInside" id="rwB-CK-hXM"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,500.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6X-jN-u74">
+                                                                    <rect key="frame" x="169" y="0.0" width="101" height="39.5"/>
+                                                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="20"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.43137254901960786" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="cdc-jL-0Zs" secondAttribute="trailing" constant="40" id="KwL-X4-JNf"/>
+                                                        <constraint firstItem="cdc-jL-0Zs" firstAttribute="leading" secondItem="2DL-UU-VSN" secondAttribute="leading" constant="40" id="LlK-we-b6B"/>
+                                                        <constraint firstItem="cdc-jL-0Zs" firstAttribute="centerY" secondItem="2DL-UU-VSN" secondAttribute="centerY" id="UXH-ds-aSu"/>
+                                                        <constraint firstAttribute="height" constant="54" id="W8P-6K-CFj"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="yXa-0n-q7F" firstAttribute="leading" secondItem="a2F-6F-Ama" secondAttribute="leading" constant="32" id="04K-oX-UKG"/>
+                                        <constraint firstItem="2Ib-2V-joN" firstAttribute="bottom" secondItem="daj-By-02t" secondAttribute="bottom" id="3XF-D3-U7s"/>
+                                        <constraint firstItem="2Ib-2V-joN" firstAttribute="width" secondItem="0mc-a8-3ya" secondAttribute="width" id="5jj-Fo-GKT"/>
+                                        <constraint firstItem="yXa-0n-q7F" firstAttribute="top" secondItem="a2F-6F-Ama" secondAttribute="top" constant="32" id="Els-yt-38V"/>
+                                        <constraint firstItem="2Ib-2V-joN" firstAttribute="leading" secondItem="daj-By-02t" secondAttribute="leading" id="INR-qE-3ew"/>
+                                        <constraint firstAttribute="bottom" secondItem="yXa-0n-q7F" secondAttribute="bottom" constant="32" id="pPX-Va-gtH"/>
+                                        <constraint firstAttribute="trailing" secondItem="yXa-0n-q7F" secondAttribute="trailing" constant="32" id="qTN-Dn-Tbm"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="NQO-UC-tXC" secondAttribute="bottom" id="GK9-Sk-s7g"/>
+                        <constraint firstAttribute="trailing" secondItem="NQO-UC-tXC" secondAttribute="trailing" id="LYx-op-qTi"/>
+                        <constraint firstItem="NQO-UC-tXC" firstAttribute="top" secondItem="bfT-AX-65t" secondAttribute="top" id="Sgf-Tn-UaW"/>
+                        <constraint firstItem="NQO-UC-tXC" firstAttribute="leading" secondItem="bfT-AX-65t" secondAttribute="leading" id="ZbQ-a7-JLJ"/>
+                        <constraint firstItem="NQO-UC-tXC" firstAttribute="width" secondItem="bfT-AX-65t" secondAttribute="width" id="cdO-MO-ykz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rna-kz-PBd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="349:896" id="D3Q-eT-FFp"/>
+                <constraint firstItem="bfT-AX-65t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LpG-m3-gme"/>
+                <constraint firstItem="bfT-AX-65t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dYl-Os-dQi"/>
+                <constraint firstAttribute="bottom" secondItem="bfT-AX-65t" secondAttribute="bottom" id="hEJ-et-MSL"/>
+                <constraint firstAttribute="trailing" secondItem="bfT-AX-65t" secondAttribute="trailing" id="jTI-EE-UNw"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon1" width="28" height="28"/>
+        <image name="Icon2" width="28" height="22"/>
+        <image name="Icon3" width="28" height="21"/>
+        <image name="Icon4" width="19" height="22"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

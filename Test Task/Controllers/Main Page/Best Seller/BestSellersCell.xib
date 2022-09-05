@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mark-Pro-Bold.ttf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="MarkPro-Regular.ttf">
+            <string>MarkPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BestSellersCell" customModule="Test_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="219"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="219"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-y1-023">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="219"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zme-0r-olJ">
+                        <rect key="frame" x="16" y="0.0" width="122" height="203"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OQp-Ac-21q">
+                                <rect key="frame" x="0.0" y="0.0" width="122" height="161"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kmB-Ju-fuJ">
+                                <rect key="frame" x="0.0" y="169" width="122" height="13"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,047" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsU-1a-hlI">
+                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="13"/>
+                                        <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="$1,500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdb-tR-4ds">
+                                        <rect key="frame" x="55.5" y="0.0" width="66.5" height="13"/>
+                                        <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="10"/>
+                                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samsung Galaxy s20 Ultra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVB-26-Qq5">
+                                <rect key="frame" x="0.0" y="190" width="122" height="13"/>
+                                <fontDescription key="fontDescription" name="MarkPro-Regular" family="Mark Pro" pointSize="10"/>
+                                <color key="textColor" red="0.0039215686274509803" green="0.0" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuP-06-9ub">
+                        <rect key="frame" x="121" y="8" width="25" height="25"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="2NN-fE-32Q"/>
+                            <constraint firstAttribute="height" constant="25" id="Sh6-Fm-CQe"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="likeImageEmpty"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zme-0r-olJ" secondAttribute="bottom" constant="16" id="5ad-7G-COa"/>
+                <constraint firstItem="zme-0r-olJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="88T-GO-wZv"/>
+                <constraint firstItem="wuP-06-9ub" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="HoY-u4-7O3"/>
+                <constraint firstAttribute="trailing" secondItem="2Da-y1-023" secondAttribute="trailing" id="N9k-Tu-Okh"/>
+                <constraint firstItem="2Da-y1-023" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NBk-Hc-uSN"/>
+                <constraint firstItem="2Da-y1-023" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gpU-7q-ydc"/>
+                <constraint firstAttribute="bottom" secondItem="2Da-y1-023" secondAttribute="bottom" id="hbb-sj-ESK"/>
+                <constraint firstAttribute="trailing" secondItem="zme-0r-olJ" secondAttribute="trailing" constant="16" id="jpt-9C-JnT"/>
+                <constraint firstItem="zme-0r-olJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="qkI-Q3-iG8"/>
+                <constraint firstAttribute="trailing" secondItem="wuP-06-9ub" secondAttribute="trailing" constant="8" id="vs1-FG-n4s"/>
+            </constraints>
+            <size key="customSize" width="154" height="219"/>
+            <connections>
+                <outlet property="backView" destination="2Da-y1-023" id="pYP-VR-pzJ"/>
+                <outlet property="discountPriceLabel" destination="MsU-1a-hlI" id="zlS-c5-HqN"/>
+                <outlet property="isLikedButton" destination="wuP-06-9ub" id="dwr-Ud-IEY"/>
+                <outlet property="pictureImageView" destination="OQp-Ac-21q" id="as6-lV-Ix9"/>
+                <outlet property="priceWithoutDiscountLabel" destination="wdb-tR-4ds" id="FGb-Lo-1jn"/>
+                <outlet property="titleLabel" destination="jVB-26-Qq5" id="4YT-Oh-JaQ"/>
+            </connections>
+            <point key="canvasLocation" x="213.04347826086959" y="184.48660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="likeImageEmpty" width="11" height="10"/>
+    </resources>
+</document>
