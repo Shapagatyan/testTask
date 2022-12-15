@@ -13,7 +13,7 @@ class SectionHeader: UICollectionReusableView {
     lazy var seeMoreButton: UIButton = {
         let button = UIButton()
         button.setTitle("see more", for: .normal)
-        button.titleLabel?.font = UIFont(name: "Avenir", size: 15)
+        button.titleLabel?.font = UIFont(name: "MarkPro", size: 15)
         button.setTitleColor(UIColor(hex: "#FF6E4E"), for: .normal)
         return button
     }()
@@ -22,8 +22,7 @@ class SectionHeader: UICollectionReusableView {
         let title = UILabel()
         title.textAlignment = .left
         title.textColor = UIColor(hex: "#010035")
-        title.font = UIFont(name: "Avenir Book", size: 25)
-//        MarkPro-Bold
+        title.font = UIFont(name: "MarkPro-Bold", size: 24)
         return title
     }()
     
@@ -54,7 +53,6 @@ extension SectionHeader {
             seeMoreButton.topAnchor.constraint(equalTo: topAnchor),
             seeMoreButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             seeMoreButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
-//            seeMoreButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 16)
         ])
         
         addSubview(title)

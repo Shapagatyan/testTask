@@ -109,8 +109,6 @@ private extension TwoImageButton {
     func addLeftImageView() {
         leftImageView.translatesAutoresizingMaskIntoConstraints = false
         stackView.addArrangedSubview(leftImageView)
-
-        leftImageView.addRatioConstraint()
     }
 
     func addCenterLabel() {
@@ -120,6 +118,5 @@ private extension TwoImageButton {
     func addRightImageView() {
         rightImageView.translatesAutoresizingMaskIntoConstraints = false
         stackView.addArrangedSubview(rightImageView)
-        rightImageView.addRatioConstraint()
     }
 }

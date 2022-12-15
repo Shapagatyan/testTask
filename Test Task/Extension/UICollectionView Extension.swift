@@ -13,3 +13,5 @@ extension UICollectionView {
         self.register(UINib(nibName: cellType.name, bundle: nil), forCellWithReuseIdentifier: cellType.name)
     }
 }
+    
+

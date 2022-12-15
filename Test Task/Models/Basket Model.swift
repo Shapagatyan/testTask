@@ -7,6 +7,16 @@
 
 import Foundation
 
+class BasketProduct: NSObject {
+    let product: Product
+    var count: Int
+
+    internal init(product: Product, count: Int = 1) {
+        self.product = product
+        self.count = count
+    }
+}
+
 // MARK: - BascetItems
 class BascetItems: Codable {
     let basket: [Product]
@@ -16,8 +26,13 @@ class BascetItems: Codable {
 
 // MARK: - Basket
 class Product: Codable {
-    let id: Int
-    let images: String
+    var id = UUID().uuidString
     let price: Int
     let title: String
+    let images: String
+    var count: Int = 1
+
+    enum CodingKeys: String, CodingKey {
+        case images, price, title
+    }
 }

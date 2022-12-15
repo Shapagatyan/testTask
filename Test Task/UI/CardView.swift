@@ -9,16 +9,6 @@ import UIKit
 
 class CardView: UIView {
     // MARK: - Views
-//       private lazy var stackView: UIStackView = {
-//        let stack = UIStackView()
-//        stack.spacing = 20
-//        stack.backgroundColor = .red
-//        stack.axis = .vertical
-//        stack.alignment = .center
-//        stack.distribution = .fill
-//        return stack
-//    }()
-
     lazy var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.contentMode = .scaleAspectFit
@@ -51,7 +41,6 @@ private extension CardView {
     func addStackView() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(imageView)
-
         imageView.pinEdgesToSuperView(top: 8, left: 25, bottom: 8, right: 25)
     }
 
@@ -63,9 +52,3 @@ private extension CardView {
         view.backgroundColor = .clear
     }
 }
-
-// extension CardView {
-//    public func setData(_ item: Product) {
-//        imageView.setImage(imageURL: item.images[1])
-//    }
-// }

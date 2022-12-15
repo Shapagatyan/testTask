@@ -6,21 +6,21 @@
 //
 
 import Alamofire
+import Combine
 import RealmSwift
 import UIKit
 
 class TabBarController: UITabBarController {
     // MARK: - Properties
-    var bascetItems: [Product] = []
+    var cancellable: Set<AnyCancellable> = []
     var customTabBarView = UIView(frame: .zero)
-
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTabBarUI()
         self.addCustomTabBarView()
-        self.getData()
-
+        self.setupBinding()
         let controllers = TabBarControllerType.allCases.map { type -> UIViewController in
             let controller = UINavigationController(rootViewController: type.controller)
             controller.tabBarItem = UITabBarItem(title: "", image: type.image, tag: type.rawValue)
@@ -28,12 +28,13 @@ class TabBarController: UITabBarController {
         }
         setViewControllers(controllers, animated: true)
     }
-
+    
+    // MARK: - Layout Subviews
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         self.setupCustomTabBarFrame()
     }
-
+    
     // MARK: - Actions
     func setupTabBarUI() {
         tabBar.tintColor = .white
@@ -44,7 +45,7 @@ class TabBarController: UITabBarController {
         tabBar.unselectedItemTintColor = UIColor(hex: "#B3B3C3")
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
-
+    
     func setupCustomTabBarFrame() {
         let height = self.view.safeAreaInsets.bottom + 20
         var tabFrame = self.tabBar.frame
@@ -54,7 +55,7 @@ class TabBarController: UITabBarController {
         tabBar.setNeedsLayout()
         tabBar.layoutIfNeeded()
     }
-
+    
     func addCustomTabBarView() {
         self.customTabBarView.frame = tabBar.frame
         self.customTabBarView.layer.cornerRadius = 30
@@ -64,27 +65,19 @@ class TabBarController: UITabBarController {
         view.addSubview(self.customTabBarView)
         view.bringSubviewToFront(self.tabBar)
     }
-
+    
     // MARK: - Request
-    func getData() {
-        let url = URL(string: "https://run.mocky.io/v3/53539a72-3c5f-4f30-bbb1-6ca10d42c149")
-        AF.request(url!, method: .get).responseData { response in
-            switch response.result {
-            case .success(let data):
-                do {
-                    let items = try JSONDecoder().decode(BascetItems.self, from: data)
-                    self.bascetItems = items.basket
-                    self.tabBar.setBadge(value: String(self.bascetItems.count), at: 1)
-                } catch {
-                    print("Ошибка")
-                }
-            case .failure:
-                print("Ошибка")
+    func setupBinding() {
+        Basket.shared.$products.delay(for: 0.1, scheduler: RunLoop.main).sink { [weak self] items in
+            guard let `self` = self else { return }
+            self.tabBar.addBadge(value: String(items.count), index: 1)
+            if items.count == 0 {
+                self.tabBar.removeBadge(index: 1)
             }
-        }
+        }.store(in: &self.cancellable)
     }
 }
-
+    
 // MARK: - Healpers
 enum TabBarControllerType: Int, CaseIterable {
     case main
